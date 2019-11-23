@@ -1,9 +1,18 @@
+$font-stack:    Alata, sans-serif;
+$primary-color: #333;
+
 .current {
   color: green;
 }
 
+%nav-shared{
+  list-style-type: none;
+  display: flex;
+  align-items: center;	
+}
+
 .home-title {
-	font-family: Alata, Geneva, sans-serif;
+	font-family: $font-stack;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -11,9 +20,7 @@
 }
 
 .home-nav-ul {
-	display: flex;
-	list-style-type: none;
-	align-items: center;
+	@extend %nav-shared;
 	justify-content: flex-end;
 }
 
@@ -22,9 +29,7 @@
   text-align: center;
   display: inline-block;
   padding: 10px 15px;
-  font-family: Alata, Geneva, sans-serif;
-  color: grey;
-  text-decoration: none;
+  font-family: $font-stack;
 }
 
 .home-nav-li a {
@@ -36,3 +41,24 @@
 	text-decoration: underline;
 }
 
+.about-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  a {
+  	font-family: $font-stack;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    color: grey;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
