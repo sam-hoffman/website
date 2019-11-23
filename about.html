@@ -1,0 +1,28 @@
+---
+title: About
+---
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+    <style>
+		body {
+		  background-color: #FFFDF3;
+		}
+    </style>
+</head>
+
+<body>
+  <div class="about-nav">
+    <nav>
+      <ul>
+		  {% for item in site.data.navigation %}
+		   <li><a href="{{ item.link }}" {% if page.url == item.link %}{% endif %}>
+	      {{ item.name }}</li></a>
+		  {% endfor %}
+		</ul>
+  </div>
+</body>
