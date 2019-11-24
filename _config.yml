@@ -12,6 +12,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: upwards_graph
 github_username:  sam-hoffman
 linkedin: https://www.linkedin.com/in/sam-hoffman-0a6316b7/
+include: ['_pages']
 
 plugins:
   - jekyll-feed
