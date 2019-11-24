@@ -1,0 +1,35 @@
+---
+title: Home
+permalink: /
+---
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+    <style>
+		body {
+		  background-color: #FFFDF3;
+		}
+    </style>
+</head>
+
+<body>
+	<div class="home-title">
+		<h1>Sam Hoffman</h1>
+		<div>
+			<nav>
+				<ul class="home-nav-ul">
+				  {% for item in site.data.navigation %}
+				   <li class="home-nav-li"><a href="{{ item.link }}" {% if page.url == item.link %}{% endif %}>
+			      {{ item.name }}</li></a>
+				  {% endfor %}
+				</ul>
+			</nav>
+		</div>
+	</div>
+</body>
+
+
