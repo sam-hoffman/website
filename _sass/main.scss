@@ -2,17 +2,15 @@
 //todo: responsive design
 
 $font-stack:    Alata, sans-serif;
+$background: white;
 
-.current {
-  color: green;
+// background
+.shared-background {
+  background-color: $background;
 }
 
-%nav-shared{
-  list-style-type: none;
-  display: flex;
-  align-items: center;	
-}
 
+//home styles
 .home-title {
 	font-family: $font-stack;
 	height: 100%;
@@ -21,28 +19,33 @@ $font-stack:    Alata, sans-serif;
 	justify-content: center;
 }
 
-.home-nav-ul {
-	@extend %nav-shared;
+.home-nav {
+  ul{
+	list-style-type: none;
+  display: flex;
+  align-items: center;
 	justify-content: flex-end;
-}
+  }
 
-.home-nav-li {
+  li {
   list-style-type: none;
   text-align: center;
   display: inline-block;
   padding: 10px 15px;
   font-family: $font-stack;
+  }
+
+  li a {
+  color:grey;
+  text-decoration: none;
+  &:hover {
+  text-decoration: underline;
+  }
+  }
 }
 
-.home-nav-li a {
-	color:grey;
-	text-decoration: none;
-}
 
-.home-nav-li:hover a{
-	text-decoration: underline;
-}
-
+//general (posts, about) styles
 .general-nav {
   ul {
     margin: 0;
@@ -65,13 +68,15 @@ $font-stack:    Alata, sans-serif;
   }
 }
 
-.about-title {
+.general-title {
 	font-family: $font-stack;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
+
+//about text style
 .about-text {
  width: 300px;
  margin: 0 auto;
@@ -81,6 +86,8 @@ $font-stack:    Alata, sans-serif;
  }
 }
 
+
+//posts text style
 .posts-text {
   width: 80%;
   margin: 0 auto;
