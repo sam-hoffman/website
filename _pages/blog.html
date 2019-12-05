@@ -11,6 +11,15 @@ permalink: /blog.html
     {% seo %}
 </head>
 <body class="shared-background">
+  <div class="blog-title">
+    {% for post in site.posts %}
+    <sub>{{ post.date | date: '%B %d, %Y' }}</sub>
+    <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+  <div>
   <div class="about-text">
+      {{ post.excerpt }}
+  </div>
+</div>
+{% endfor %}
   </div>
 </body>

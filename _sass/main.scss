@@ -79,14 +79,27 @@ $background: white;
 
 //about text style
 .about-text {
- width: 300px;
+ width: 500px;
  margin: 0 auto;
  font-family: $sans-serif;
  p {
    display: inline-block;
  }
+ a {
+   font-family: $sans-serif;
+   text-decoration: none;
+   color: grey;
+   &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+  margin: 3px;
+  li {
+  margin: 5px;
+  }
+  }
 }
-
 
 //posts text style
 .posts-text {
@@ -96,4 +109,27 @@ $background: white;
     ul {
       list-style-type: none;
     }
+}
+
+.blog-title {
+  sub {
+  font-family: $sans-serif;
+  }
+  h3 {
+   font-family: $serif;
+  }
+  a {
+    font-family: $serif;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+//image style
+.image-centered {
+margin: 0 auto;
+display: block;
 }
