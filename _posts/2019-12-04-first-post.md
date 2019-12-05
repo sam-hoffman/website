@@ -5,7 +5,7 @@ title: First blog post!
 permalink: 
 ---
 
-This is my first blog post! Hopefully more to come.   
+This is my first blog post to celebrate my first website deployment! Hopefully more to come.   
 
 I'm hoping that the first couple of real blog posts will include:  
   * How to make a website with Jekyll when your only experience with HTML is, like, a little bit of webscraping
