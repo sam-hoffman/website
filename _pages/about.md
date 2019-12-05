@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About me
+title: About Me
 permalink: /about.html
 ---
 
