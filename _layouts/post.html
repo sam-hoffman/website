@@ -2,7 +2,7 @@
 layout: default
 ---
 <h1 class="general-title">{{ page.title }}</h1>
-<div class="about-text">
-	<p>{{ page.date | date: '%B %d, %Y' }}</p>
+<div class="blog-post-text">
+	<sub>{{ page.date | date: '%B %d, %Y' }}</sub>
 	{{ content }}
 </div>
