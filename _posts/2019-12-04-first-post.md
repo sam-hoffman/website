@@ -2,7 +2,6 @@
 layout: post
 date: 2019-12-04
 title: First blog post!
-permalink: 
 ---
 
 This is my first blog post to celebrate my first website deployment! Hopefully more to come.   
