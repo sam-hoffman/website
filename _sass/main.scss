@@ -129,16 +129,39 @@ $background: white;
       text-decoration: underline;
     }
   }
+  p {
+  font-family: $sans-serif;
+  margin: 1 auto;
+  }
 }
 
-.blog-post-excerpt {
+.blog-post-text {
   font-family: $sans-serif;
-  text-align: left;
   width: 80%;
+  margin: 0 auto;
+  sub {
+  color: grey;
+  //TODO: add indent 4px
+  }
 }
 
 //image style
 .image-centered {
-margin: 0 auto;
-display: block;
+img {
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+p {
+  text-align: centered;
+  color: grey;
+  font: $sans-serif;
+  margin: 1 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 }
