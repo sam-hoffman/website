@@ -10,7 +10,7 @@ $background: white;
   background-color: $background;
 }
 
-
+//TODO: sam hoffman above nav on home page for mobile
 //home styles
 .home-title {
 	font-family: $serif;
@@ -78,8 +78,9 @@ $background: white;
 
 
 //about text style
+//TODO: list style type dashes instead of bullets
 .about-text {
- width: 500px;
+ width: 90%;
  margin: 0 auto;
  font-family: $sans-serif;
  p {
@@ -94,10 +95,10 @@ $background: white;
     }
   }
   ul {
-  margin: 3px;
-  li {
-  margin: 5px;
-  }
+    margin: 3px;
+    li {
+    margin: 5px;
+    }
   }
 }
 
@@ -114,9 +115,11 @@ $background: white;
 .blog-title {
   sub {
   font-family: $sans-serif;
+  margin: 0 auto;
   }
   h3 {
    font-family: $serif;
+   margin: 0 auto;
   }
   a {
     font-family: $serif;
@@ -126,6 +129,12 @@ $background: white;
       text-decoration: underline;
     }
   }
+}
+
+.blog-post-excerpt {
+  font-family: $sans-serif;
+  text-align: left;
+  width: 80%;
 }
 
 //image style
