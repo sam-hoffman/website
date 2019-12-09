@@ -130,6 +130,11 @@ $desktop-width: 800px;
 }
 
 .blog-listing {
+  width: 80%;
+  margin: 0 auto;
+  @include desktop {
+  width: 60%
+  }
   sub {
   font-family: $sans-serif;
   margin-bottom: 0px;
