@@ -17,6 +17,7 @@ Here's some info about me:
  * The one cool unpaid thing I'm doing now is helping organize the [Portland PyData](https://pdx.pydata.org) group
  * In my free time, I enjoy climbing 🧗, running 🏃‍♀️, cooking 🍪, travelling ✈️, and learning new things 📚
 
+<strong id="contact">Contact me!</strong><br>
 You can email me at sam dot hoffman 99 at gmail dot com, or you can find me in a variety of locations on the internet:
  * [@upwards_graph](https://twitter.com/upwards_graph) on Twitter
  * [@hoffman.content](https://www.instagram.com/hoffman.content/) on Instagram
