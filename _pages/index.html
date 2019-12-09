@@ -1,30 +1,19 @@
 ---
 title: Home
 permalink: /
+layout: ur_default
 ---
-
-<head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% feed_meta %}
-    {% seo %}
-</head>
-
-<body class="shared-background">
-	<div class="home-title">
-		<h1>Sam Hoffman</h1>
-		<div class="home-nav">
-			<nav>
-				<ul class="home-nav-ul">
-				  {% for item in site.data.navigation %}
-				   <li class="home-nav-li"><a href="{{ item.link }}" {% if page.url == item.link %}{% endif %}>
-			      {{ item.name }}</li></a>
-				  {% endfor %}
-				</ul>
-			</nav>
-		</div>
-	</div>
-</body>
-
+<div class="home">
+  <h1>Sam Hoffman</h1>
+  <div>
+    <nav>
+      <ul>
+        {% for item in site.data.navigation %}
+        <li><a href="{{ item.link }}" {% if page.url == item.link %}{% endif %}>
+        {{ item.name }}</li></a>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>
 
