@@ -97,7 +97,10 @@ $desktop-width: 800px;
 
 //about text style
 .about-text {
- width: 90%;
+ width: 80%;
+ @include desktop {
+ width: 50%
+ }
  margin: 0 auto;
  font-family: $sans-serif;
  p {
