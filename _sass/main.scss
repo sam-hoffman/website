@@ -122,21 +122,11 @@ $desktop-width: 800px;
   }
 }
 
-//posts text style
-.posts-text {
-  width: 80%;
-  margin: 0 auto;
-  font-family: $sans-serif;
-    ul {
-      list-style-type: none;
-    }
-}
-
 .blog-listing {
   width: 80%;
   margin: 0 auto;
   @include desktop {
-  width: 60%
+  width: 50%
   }
   sub {
   font-family: $sans-serif;
@@ -161,7 +151,7 @@ $desktop-width: 800px;
   p {
   margin-top: 0px;
   font-family: $sans-serif;
-  margin: 1 auto;
+  display: inline-block;
   }
 }
 
@@ -169,11 +159,16 @@ $desktop-width: 800px;
   font-family: $sans-serif;
   width: 80%;
   margin: 0 auto;
+  h1 {
+  font-family: $serif;
+  }
   @include desktop {
-    width: 60%;
+    width: 50%;
   }
   sub {
   color: grey;
+  text-align: center;
+  margin: auto;
   }
   a {
   color:grey;
