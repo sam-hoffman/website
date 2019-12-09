@@ -12,7 +12,7 @@ This website has about four pages and I can already feel the tech debt building,
 On the other hand, on a plane without internet is the perfect place to try to implement something I don't understand.
 
 {% include image.html
-img="/assets/pictures/20191207/layouts.png"
+img="assets/pictures/20191207/layouts.png"
 title="all my layouts"
 caption="Somehow default inherits from ur_default but other things do not - this is definitely on the must-fix list" %}
 
@@ -20,12 +20,12 @@ Giving things my best shot without internet, I switched all my widths to percent
 This resulted a sexy-looking mobile layout but a dumb-looking desktop layout with the text stretching way too far across the screen. 
 Mobile first design!
 {% include image.html
-img="/assets/pictures/20191207/mobile_layout.png"
+img="assets/pictures/20191207/mobile_layout.png"
 title="Mobile layout"
 caption="Mobile layout good." %}
   
 {% include image.html
-img="/assets/pictures/20191207/desktop_layout.png"
+img="assets/pictures/20191207/desktop_layout.png"
 title="Desktop layout"
 caption="Desktop layout bad." %}
 
