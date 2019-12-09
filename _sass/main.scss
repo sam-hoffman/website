@@ -1,9 +1,25 @@
-//todo: choose different fonts for text. also, lighten the background color. 
 //todo: responsive design
+//todo: shared link style
+//TODO: list style type more exciting shape instead of bullets
 
 $sans-serif: 'Nanum Gothic', sans-serif;
 $serif: 'Playfair Display', serif;
 $background: white;
+
+$desktop-width: 800px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 
 // background
 .shared-background {
@@ -71,14 +87,15 @@ $background: white;
 
 .general-title {
 	font-family: $serif;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin: 0 auto;
+  text-align: center;
+  @include mobile {
+   font-size: 1.75em;
+  }
 }
 
 
 //about text style
-//TODO: list style type dashes instead of bullets
 .about-text {
  width: 90%;
  margin: 0 auto;
@@ -112,14 +129,18 @@ $background: white;
     }
 }
 
-.blog-title {
+.blog-listing {
   sub {
   font-family: $sans-serif;
-  margin: 0 auto;
+  margin-bottom: 0px;
   }
   h3 {
    font-family: $serif;
-   margin: 0 auto;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   display: block;
+   text-align: centered;
+   padding: 0px;
   }
   a {
     font-family: $serif;
@@ -130,6 +151,7 @@ $background: white;
     }
   }
   p {
+  margin-top: 0px;
   font-family: $sans-serif;
   margin: 1 auto;
   }
@@ -139,10 +161,19 @@ $background: white;
   font-family: $sans-serif;
   width: 80%;
   margin: 0 auto;
+  @include desktop {
+    width: 60%;
+  }
   sub {
   color: grey;
-  //TODO: add indent 4px
   }
+  a {
+  color:grey;
+  text-decoration: none;
+  &:hover {
+  text-decoration: underline;
+  }
+ }
 }
 
 //image style
@@ -157,11 +188,12 @@ img {
 p {
   text-align: centered;
   color: grey;
+  font-size: 12px;
   font: $sans-serif;
   margin: 1 auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
+ }
 }
