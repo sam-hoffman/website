@@ -8,13 +8,13 @@ $background: white;
 $desktop-width: 800px;
 
 @mixin desktop {
-  @media (min-width: #{$desktop-width}) {
+  @media screen and (min-width: #{$desktop-width}) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media (max-width: #{$desktop-width}) {
+  @media screen and (max-width: 600px) {
     @content;
   }
 }
@@ -95,9 +95,12 @@ $desktop-width: 800px;
 
 //about text style
 .about-text {
- width: 80%;
+ @include mobile {
+ background-color: blue;
+ width: 80%
+ }
  @include desktop {
- width: 50%
+ background-color: red;
  }
  margin: 0 auto;
  font-family: $sans-serif;
