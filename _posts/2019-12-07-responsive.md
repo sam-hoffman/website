@@ -34,7 +34,7 @@ The typical way to do this is with media queries - CSS that overrides other CSS 
 According to the internet (from my layover in Denver), since I'm using SCSS, a CSS compiler, I might also need mixins and other things I've never heard of. 
 Reader, I'm sorry for the fake news earlier: I'm simply not good enough to create responsive design without people on the internet telling me how to do it, and in fact I'm milking the plane as a narrative device to show you the before and after. 
 Don't worry, I didn't pay United their blood money. 
-I just wrote the rest of this once I got to Cincinnati.  
+I just wrote the rest of this once I got there.  
 
 Internet restored, I found an article called [Write Better Media Queries with Sass](https://davidwalsh.name/write-media-queries-sass). 
 Mixins, it turns out, allow you to define anything in your CSS other than top-level statements like imports and function definitions (very cool that there are functions in SCSS). 
