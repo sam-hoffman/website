@@ -33,6 +33,9 @@ $background: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  @include mobile {
+  margin: 0 auto;
+  }
     h1 {
     font-family: $serif;
     }
@@ -43,7 +46,9 @@ $background: white;
       li {
       list-style-type: none;
       text-align: center;
+      @include desktop {
       display: inline-block;
+      }
       padding: 10px 15px;
       font-family: $sans-serif;
         a {
