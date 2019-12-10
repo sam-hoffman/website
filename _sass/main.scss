@@ -125,11 +125,11 @@ $background: white;
 .blog-listing {
   @include mobile {
   width: 80%;
-  margin: 0 auto;
   }
   @include desktop {
-  width: 50%
+  width: 50%;
   }
+  margin: 0 auto;
   sub {
   font-family: $sans-serif;
   margin-bottom: 0px;
