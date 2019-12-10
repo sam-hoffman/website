@@ -1,17 +1,8 @@
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Sam Hoffman
-email: sam.hoffman99@gmail.com
 description: >-
   Hi! I'm a data wrangler, climber, dreamer, and learner of languages.  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: upwards_graph
-github_username:  sam-hoffman
-linkedin: https://www.linkedin.com/in/sam-hoffman-0a6316b7/
+baseurl: /
+url: https://sam-hoffman.me
 include: ['_pages']
 
 plugins:
@@ -20,5 +11,4 @@ plugins:
   - jekyll-seo-tag
 
 markdown: kramdown
-
 highlighter: rouge
