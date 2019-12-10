@@ -31,6 +31,7 @@ caption="Desktop layout bad." %}
 
 Clearly I need to adjust the size of my content for mobile and desktop screens - in other words, I need to make my design responsive. 
 The typical way to do this is with media queries - CSS that overrides other CSS based on the size of the screen.  
+  
 According to the internet (from my layover in Denver), since I'm using SCSS, a CSS compiler, I might also need mixins and other things I've never heard of. 
 Reader, I'm sorry for the fake news earlier: I'm simply not good enough to create responsive design without people on the internet telling me how to do it, and in fact I'm milking the plane as a narrative device to show you the before and after. 
 Don't worry, I didn't pay United their blood money. 
