@@ -160,11 +160,11 @@ $background: white;
 .blog-post-text {
   @include mobile {
   width: 80%;
-  margin: 0 auto;
   }
   @include desktop {
   width: 50%
   }
+  margin: 0 auto;
   font-family: $sans-serif;
   h1 {
   font-family: $serif;
