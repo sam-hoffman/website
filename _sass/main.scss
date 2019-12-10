@@ -5,7 +5,6 @@
 $sans-serif: 'Nanum Gothic', sans-serif;
 $serif: 'Playfair Display', serif;
 $background: white;
-$desktop-width: 800px;
 
 @mixin desktop {
   @media screen and (min-width: 601px) {
@@ -126,11 +125,11 @@ $desktop-width: 800px;
 .blog-listing {
   @include mobile {
   width: 80%;
-  margin: 0 auto;
   }
   @include desktop {
-  width: 50%
+  width: 50%;
   }
+  margin: 0 auto;
   sub {
   font-family: $sans-serif;
   margin-bottom: 0px;
