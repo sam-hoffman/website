@@ -29,45 +29,69 @@ img="assets/pictures/20191207/desktop_layout.png"
 title="Desktop layout"
 caption="Desktop layout bad." %}
 
-Clearly I need some media queries. 
-According to the internet (from my layover in Denver), I might also need mixins and other things I've never heard of. 
+Clearly I need to adjust the size of my content for mobile and desktop screens - in other words, I need to make my design responsive. 
+The typical way to do this is with media queries - CSS that overrides other CSS based on the size of the screen.  
+According to the internet (from my layover in Denver), since I'm using SCSS, a CSS compiler, I might also need mixins and other things I've never heard of. 
 Reader, I'm sorry for the fake news earlier: I'm simply not good enough to create responsive design without people on the internet telling me how to do it, and in fact I'm milking the plane as a narrative device to show you the before and after. 
-Don't worry: I didn't pay United their blood money, I just wrote the rest of this once I got to Cincinnati.  
+Don't worry, I didn't pay United their blood money. 
+I just wrote the rest of this once I got to Cincinnati.  
 
 Internet restored, I found an article called [Write Better Media Queries with Sass](https://davidwalsh.name/write-media-queries-sass). 
-Turns out mixins allow you to define styles or anything other than top-level statements like imports and function definitions (very cool that there are functions in SASS). 
-In this case, I used a desktop width only, since I was mostly concerned that my site looked dumb on desktop. 
-The mixin allows me to define some css that will override the default if a condition is met - in this case, if the screen is greater than 800 pixels wide.
+Mixins, it turns out, allow you to define anything in your CSS other than top-level statements like imports and function definitions (very cool that there are functions in SCSS). 
+Most people seem to use desktop, tablet, and phone styles, but I thought my website looked fine on tablet with the desktop defaults. 
+I created two mixins: one that will allow the CSS below it to take precedence if the screen is mobile size, and one that does the same for desktop.  
 Here's the SCSS code: 
 
 ```scss
-$desktop-width: 800px;
-
 @mixin desktop {
-  @media (max-width: #{$desktop-width}) {
+  @media screen and (min-width: 601px) {
     @content;
   }
 }
 
-.blog-post-text {
-  font-family: $sans-serif;
-  width: 80%;
-  margin: 0 auto;
-  @include desktop {
-    width: 60%;
+@mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
   }
-  sub {
-  color: grey;
-  }
-  a {
-  color:grey;
-  text-decoration: none;
-  &:hover {
-  text-decoration: underline;
-  }
+}
+
+.about-text {
+ @include mobile {
+ width: 80%
  }
+ @include desktop {
+ width: 50%;
+ }
+ margin: 0 auto;
+ font-family: $sans-serif;
+ p {
+   display: inline-block;
+ }
+ a {
+   font-family: $sans-serif;
+   text-decoration: none;
+   color: grey;
+   &:hover {
+      text-decoration: underline;
+    }
+  }
+  ul {
+    margin: 3px;
+    li {
+    margin: 5px;
+    }
+  }
 }
 ```
+Setting `margin: 0 auto;` is also important - without it, the mobile design won't work right. 
+I wish I could say why - I'm sure I'll find out eventually. 
+This responsive design is not perfect - it works most of the time, but I seem to have intermittent issues that I'm trying to fix. 
+That makes me nervous to publish a blog post about responsive design, so please consider this a discussion of the things I've learned so far about responsive design. 
+In order to make the media queries work, you also need to put the following HTML somewhere on the page:
+{% highlight html %}
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+{% endhighlight %}
+I put mine in my default layout, and so was finally forced to fix my inheritance structure and free myself from the tech debt I had put myself in.  
 
 When the website is displayed in a window with a width greater than 800 pixels, the desktop mixin overrides the original width and sets the text width to 60%. 
 Otherwise, the text has a width of 80%. 
@@ -80,9 +104,36 @@ If someone with a screen reader wants to be my fourth visitor, I want to make it
 I've also added some Google Analytics, so a) now I can feed my data directly to Google and b) I can find out that I actually have only two readers. 
 Stay tuned for upcoming posts about these topics!
 
+
 <h4 id="TLDR">Summary and TLDR</h4>
  * Responsive design good
- * Responsive design not as hard as it looks with SCSS - follow the instructions [here]((https://davidwalsh.name/write-media-queries-sass))
+ * Write mixins in SCSS so that you don't have to rewrite your media queries over and over:  
+  {% highlight SCSS %}
+  @mixin desktop {
+  @media screen and (min-width: 601px) {
+    @content;
+   }
+  }
+
+  @mixin mobile {
+  @media screen and (max-width: 600px) {
+    @content;
+   }
+  }
+{% endhighlight %}
+ * Use them like: 
+  {% highlight SCSS %}
+  .responsive-class {width: 80%;
+    margin: 0 auto;
+    @include desktop {
+      width: 60%;
+    }
+  {% endhighlight %}
+ * Making sure to include the following somewhere on your page (I put it in the head of my ur_default layout to ensure it propagated to all pages)
+  {% highlight html %}
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  {% endhighlight %}
+ * Further instructions and explanations [here](https://davidwalsh.name/write-media-queries-sass)
  * [This article](https://superdevresources.com/image-caption-jekyll/) showed me how to add an image template that uses liquid tags to make inserting images much easier
  * Accessability also good, coming soon to a blog post near you
  * Analytics possibly good - blog post on that as soon as I have six (6) visitors
