@@ -22,4 +22,11 @@ You can email me at sam dot hoffman 99 at gmail dot com, or you can find me in a
  * [@upwards_graph](https://twitter.com/upwards_graph) on Twitter
  * [@hoffman.content](https://www.instagram.com/hoffman.content/) on Instagram
  * [sam-hoffman](https://github.com/sam-hoffman) on GitHub
- * On [LinkedIn](https://www.linkedin.com/in/sam-hoffman-0a6316b7/)
+ * On [LinkedIn](https://www.linkedin.com/in/sam-hoffman-0a6316b7/)  
+  
+<strong id="website">What's up with this website?</strong><br>
+Although my day job is in data wrangling, this website is a product of my efforts to teach myself new skills, particularly around web design. 
+In the long term, I'm interested in acquiring the skills to make web-based data visualizations with D3 and other JavaScript tools, and in being able to put them on the web and make them useful to people.  
+  
+This website is an about me and hopefully soon a portfolio, but it's also an experiment and a learning tool. 
+As of December 2019, this is the first project I've ever done with HTML and CSS, and so I welcome bug reports/comments/critiques and questions. 
