@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2019-12-08
-title: Adding some minor responsive design
+date: 2019-12-10
+title: Looking into responsive design
 ---
 
  I'm on a plane today, so it's the perfect time to remember that a) I actually need to Google things every two minutes while writing any kind of code, b) responsive design is functionally just a buzzword to me at the moment, and c) United Airlines sucks and I refuse to pay them for internet. 
