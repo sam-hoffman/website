@@ -26,7 +26,8 @@ You can email me at sam dot hoffman 99 at gmail dot com, or you can find me in a
   
 <strong id="website">What's up with this website?</strong><br>
 Although my day job is in data wrangling, this website is a product of my efforts to teach myself new skills, particularly around web design. 
-In the long term, I'm interested in acquiring the skills to make web-based data visualizations with D3 and other JavaScript tools, and in being able to put them on the web and make them useful to people.  
+In the long term, I'm interested in acquiring the skills to make web-based data visualizations with D3 and other JavaScript tools.
   
 This website is an about me and hopefully soon a portfolio, but it's also an experiment and a learning tool. 
-As of December 2019, this is the first project I've ever done with HTML and CSS, and so I welcome bug reports/comments/critiques and questions. 
+I made this site basically from scratch with Jekyll.
+As this is the first project I've ever done with HTML and CSS, I welcome bug reports/comments/critiques and questions - feel free to contact me through any of the options above. 
