@@ -1,8 +1,8 @@
 title: Sam Hoffman
 description: >-
   Hi! I'm a data wrangler, climber, dreamer, and learner of languages.  
-baseurl: /
-url: https://sam-hoffman.me
+baseurl: ""
+url: ""
 include: ['_pages']
 
 plugins:
