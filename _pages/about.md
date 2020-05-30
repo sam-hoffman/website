@@ -3,9 +3,11 @@ layout: about
 title: About Me
 permalink: /about.html
 ---
+{% include large-image.html
+img="assets/pictures/me-with-laptop.jpeg"
+title="A picture of me wearing a rainbow hoodie, sitting on some concrete steps, ignoring a laptop." %}
 
-
-Hi! I'm Sam.  
+# Hi! I'm Sam.  
   
   
 Here's some info about me:
@@ -17,14 +19,18 @@ Here's some info about me:
  * The one cool unpaid thing I'm doing now is helping organize the [Portland PyData](https://pdx.pydata.org) group
  * In my free time, I enjoy climbing 🧗, running 🏃‍♀️, cooking 🍪, travelling ✈️, and learning new things 📚
 
-<strong id="contact">Contact me!</strong><br>
+ <br>
+
+<h2 id="contact">Contact me!</h2>
 You can email me at sam dot hoffman 99 at gmail dot com, or you can find me in a variety of locations on the internet:
  * [@upwards_graph](https://twitter.com/upwards_graph) on Twitter
  * [@hoffman.content](https://www.instagram.com/hoffman.content/) on Instagram
  * [sam-hoffman](https://github.com/sam-hoffman) on GitHub
  * On [LinkedIn](https://www.linkedin.com/in/sam-hoffman-0a6316b7/)  
+
+ <br>
   
-<strong id="website">What's up with this website?</strong><br>
+<h2 id="website">What's up with this website?</h2>
 Although my day job is in data wrangling, this website is a product of my efforts to teach myself new skills, particularly around web design. 
 In the long term, I'm interested in acquiring the skills to make web-based data visualizations with D3 and other JavaScript tools.
   

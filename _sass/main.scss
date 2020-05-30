@@ -212,3 +212,24 @@ p {
   width: 50%;
  }
 }
+
+.image-large {
+img {
+  margin: 0 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+p {
+  text-align: centered;
+  color: grey;
+  font-size: 12px;
+  font: $sans-serif;
+  margin: 1 auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+}
