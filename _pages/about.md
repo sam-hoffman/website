@@ -22,11 +22,13 @@ Here's some info about me:
  <br>
 
 <h2 id="contact">Contact me!</h2>
-You can email me at sam dot hoffman 99 at gmail dot com, or you can find me in a variety of locations on the internet:
+You can email me at sam at samhoffman dot me*, or you can find me in a variety of locations on the internet:
  * [@upwards_graph](https://twitter.com/upwards_graph) on Twitter
  * [@hoffman.content](https://www.instagram.com/hoffman.content/) on Instagram
  * [sam-hoffman](https://github.com/sam-hoffman) on GitHub
  * On [LinkedIn](https://www.linkedin.com/in/sam-hoffman-0a6316b7/)  
+
+* or any word of your choice, like dogs at samhoffman dot me! feel free to use a cool word, or whatever you want to talk about
 
  <br>
   
