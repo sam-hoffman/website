@@ -28,7 +28,7 @@ You can email me at sam at samhoffman dot me*, or you can find me in a variety o
  * [sam-hoffman](https://github.com/sam-hoffman) on GitHub
  * On [LinkedIn](https://www.linkedin.com/in/sam-hoffman-0a6316b7/)  
 
-* or any word of your choice, like dogs at samhoffman dot me! feel free to use a cool word, or whatever you want to talk about
+\* or any word of your choice, like dogs at samhoffman dot me! feel free to use a cool word, or whatever you want to talk about
 
  <br>
   
