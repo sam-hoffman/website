@@ -14,7 +14,8 @@ Here's some info about me:
  * I'm from Denver, CO
  * I live in Portland, OR now, but in the past I've lived in Samsun, Turkey; Chicago, Istanbul, and Paris
  * I studied statistics 📈 and Turkish 🇹🇷 at the University of Chicago, where I also worked as a research assistant with Dr. Rena Conti modeling the effect of hepatitis drugs on the market for donor organs
- * I now work at Cascade Data Labs in Portland as a data analyst. I spend my days building and training predictive models and putting them into production, building data pipelines with Luigi, Airflow, and unconsionable amounts of SQL; and making dashboards
+ * I now work at Graphika (located in NYC, although I still live in Portland) as a data engineer! I spend my days writing lots of Python, and am looking forward to also wrestling with AWS. 
+ * I used to work for Cascade Data Labs in Portland. 
  * Some of the cooler unpaid things I've done in the past include newspaper layout design and editing, ski patrol, and organizing the University of Chicago climbing club
  * The one cool unpaid thing I'm doing now is helping organize the [Portland PyData](https://pdx.pydata.org) group
  * In my free time, I enjoy climbing 🧗, running 🏃‍♀️, cooking 🍪, travelling ✈️, and learning new things 📚
